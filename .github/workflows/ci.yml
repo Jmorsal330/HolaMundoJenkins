@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: 18
           command: run
-          jcasc: jcasc.yml
           jenkinsfile: Jenkinsfile
           pluginstxt: plugins.txt
+          jcasc: jcasc.yml
           initHook: groovy.init.d
