@@ -11,3 +11,4 @@ jobs:
           jenkinsfile: Jenkinsfile
           pluginstxt: plugins.txt
           jcasc: jcasc.yml
+          initHook: groovy.init.d
