@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('hello') {
+        stage('test casc env') {
             steps {
-                sh 'echo Hello Jenkins!'
+                echo "JCasC env.hello: ${env.hello}"
             }
         }
     }
