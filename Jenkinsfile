@@ -5,11 +5,6 @@ pipeline {
         jdk 'jdk11'
     }
     stages {
-        stage('test casc env') {
-            steps {
-                echo "JCasC env.hello: ${env.hello}"
-            }
-        }
         stage('env') {
             steps {
                 sh 'mvn --version'
