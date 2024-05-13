@@ -6,7 +6,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: jenkinsci/jfr-static-image-action@master
+      - uses: actions/setup-node@v3
+      - uses: jenkinsci/jfr-setup-action@master
+      - uses: jenkinsci/jfr-runtime-action@master
         with:
+          node-version: 18
           command: run
           jenkinsfile: Jenkinsfile
           pluginstxt: plugins.txt
